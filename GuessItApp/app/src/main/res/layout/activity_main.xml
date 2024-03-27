@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayModeActivity"
+    android:gravity="center_vertical"
+    android:background="@drawable/stadium_bg_v3"
+    android:backgroundTint="#80000000"
+    android:backgroundTintMode="src_over"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUESS IT APP"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:shadowColor="@color/black"
+        android:shadowDx="-5"
+        android:shadowDy="5"
+        android:shadowRadius="9"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="center_vertical"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundImageView"
+        android:src="@drawable/app_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_margin="64dp">
+
+        <TextView
+            android:id="@+id/tv_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="-5"
+            android:shadowDy="5"
+            android:shadowRadius="9"
+            android:padding="18dp"
+            android:background="@drawable/default_option_border"/>
+
+        <TextView
+            android:id="@+id/tv_donate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/default_option_border"
+            android:gravity="center"
+            android:padding="18dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="-5"
+            android:shadowDy="5"
+            android:shadowRadius="9"
+            android:text="HOW TO PLAY"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/default_option_border"
+            android:gravity="center"
+            android:padding="18dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="-5"
+            android:shadowDy="5"
+            android:shadowRadius="9"
+            android:text="ABOUT APP"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EXIT"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="-5"
+            android:shadowDy="5"
+            android:shadowRadius="9"
+            android:padding="18dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/default_option_border"/>
+
+    </LinearLayout>
+
+</LinearLayout>
